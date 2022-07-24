@@ -32,3 +32,18 @@ function mostrarProductosDelCarrito() {
 }
 
 mostrarProductosDelCarrito();
+
+//Sweet FinalizarCompra
+function finalizarCompar() {
+    Swal.fire({
+        title: 'MUCHAS GRACIAS POR SU COMPRA',
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        }
+    })
+}
+
+document.getElementById("productos_carrito").addEventListener("click", finalizarCompar);

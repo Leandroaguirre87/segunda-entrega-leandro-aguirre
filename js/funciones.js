@@ -77,3 +77,17 @@ function eliminarDelCarrito(id) {
     mostrarCarrito();
     mostrarProductosDelCarrito();
 }
+
+//Sweet Alert
+
+function mostarAlert() {
+    Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Su producto ha sido agregado satisfactoriamente',
+        showConfirmButton: false,
+        timer: 1500
+    })
+}
+
+document.getElementById("productos").addEventListener("click", mostarAlert);
