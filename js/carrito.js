@@ -33,17 +33,16 @@ function mostrarProductosDelCarrito() {
 
 mostrarProductosDelCarrito();
 
-//Sweet FinalizarCompra
-function finalizarCompar() {
-    Swal.fire({
-        title: 'MUCHAS GRACIAS POR SU COMPRA',
-        showClass: {
-            popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
-        }
-    })
-}
 
-document.getElementById("productos_carrito").addEventListener("click", finalizarCompar);
+/*Toastify
+addEventListener("click", () => {
+    Toastify({
+        text: "Ahora el boneco es tuyo",
+        className: "info",
+        gravity: "bottom",
+        style: {
+            background: "linear-gradient(to right, red, violet)",
+        }
+    }).showToast();
+})
+boton.addEventListener*/
